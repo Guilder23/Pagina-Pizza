@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizzería Premium</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  
+
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/pizass.css">
+  
+</head>
+<body>
+    <div class="pizza-rain" id="pizzaRain"></div>
+  <nav>
+    <div class="logo">PizzaX</div>
+
+    <div class="nav-links" id="navLinks">
+      <button class="nav-close" id="navCloseBtn" aria-label="Cerrar menú" type="button">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <a href="#inicio">Inicio</a>
+      <a href="#promos">Promociones</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#footer">Contacto</a>
+    </div>
+
+
+    <div class="menu-btn" id="menuBtn" aria-label="Abrir menú" role="button" tabindex="0">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <div class="nav-overlay" id="navOverlay"></div>
+  </nav>
+
+  <section class="hero" id="inicio">
+    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1600&auto=format&fit=crop" alt="Pizza">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <p>Las mejores pizzas artesanales con una experiencia visual moderna y futurista.</p>
+      <div class="buttons">
+        <a class="btn btn-primary" href="#catalogo" style="display:inline-flex;align-items:center;gap:10px"><i class="fa-solid fa-burger"></i>Ver Menú</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="promos">
+    <div class="title hidden">
+      <h2>Promociones</h2>
+      <p>Pizzas con descuentos especiales</p>
+    </div>
+
+    <div class="carousel-container">
+      <div class="carousel-track">
+
+        <div class="promo-card">
+          <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1200&auto=format&fit=crop" alt="Pizza Italiana">
+          <div class="promo-content">
+            <div class="discount">50% OFF</div>
+            <h3>Pizza Italiana</h3>
+            <p>Queso mozzarella y pepperoni artesanal.</p>
+          </div>
+        </div>
+
+        <div class="promo-card">
+          <img src="https://images.unsplash.com/photo-1604382355076-af4b0eb60143?q=80&w=1200&auto=format&fit=crop" alt="Pizza BBQ">
+          <div class="promo-content">
+            <div class="discount">2x1</div>
+            <h3>Pizza BBQ</h3>
+            <p>Pollo BBQ y queso cheddar.</p>
+          </div>
+        </div>
+
+        <div class="promo-card">
+          <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?q=80&w=1200&auto=format&fit=crop" alt="Pizza Suprema">
+          <div class="promo-content">
+            <div class="discount">30% OFF</div>
+            <h3>Pizza Suprema</h3>
+            <p>Ingredientes premium irresistibles.</p>
+          </div>
+        </div>
+
+        <div class="promo-card">
+          <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1200&auto=format&fit=crop" alt="Pizza Italiana 2">
+          <div class="promo-content">
+            <div class="discount">50% OFF</div>
+            <h3>Pizza Italiana</h3>
+            <p>Queso mozzarella y pepperoni artesanal.</p>
+          </div>
+        </div>
+
+        <div class="promo-card">
+          <img src="https://images.unsplash.com/photo-1548365328-9f547fb0953b?q=80&w=1200&auto=format&fit=crop" alt="Pizza BBQ 2">
+          <div class="promo-content">
+            <div class="discount">2x1</div>
+            <h3>Pizza BBQ</h3>
+            <p>Pollo BBQ y queso cheddar.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="catalogo">
+    <div class="title hidden">
+      <h2>Catálogo</h2>
+      <p>Nuestras pizzas más populares</p>
+    </div>
+
+    <div class="cards">
+
+      <div class="card hidden">
+        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1200&auto=format&fit=crop" alt="Pizza Italiana">
+        <div class="card-content">
+          <h3>Pizza Italiana</h3>
+          <p>Pizza artesanal con ingredientes premium.</p>
+
+          <div class="price-row">
+            <div class="price-pill"><i class="fa-solid fa-tag"></i> 45 Bs</div>
+          </div>
+
+          <div class="card-buttons">
+            <button
+              data-action="details"
+              class="btn-details"
+              data-name="Pizza Italiana"
+              data-desc="Queso mozzarella y pepperoni artesanal, con salsa de tomate natural y orégano al punto."
+              data-price="45 Bs"
+              data-img1="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1200&auto=format&fit=crop"
+              data-img2="https://images.unsplash.com/photo-1594007654729-407eedc4be65?q=80&w=1200&auto=format&fit=crop"
+              data-img3="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1200&auto=format&fit=crop"
+              data-whatsapp="https://wa.me/59170000000?text=Hola%20PizzaX!%20Quiero%20la%20Pizza%20Italiana%20por%2045%20Bs"
+            >Detalles</button>
+
+            <a class="whatsapp-btn" href="https://wa.me/59170000000?text=Hola%20PizzaX!%20Quiero%20la%20Pizza%20Italiana%20por%2045%20Bs" target="_blank" rel="noreferrer">
+              <i class="fab fa-whatsapp"></i>
+              <span>WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card hidden">
+        <img src="https://images.unsplash.com/photo-1604382355076-af4b0eb60143?q=80&w=1200&auto=format&fit=crop" alt="Pizza BBQ">
+        <div class="card-content">
+          <h3>Pizza BBQ</h3>
+          <p>Pollo BBQ y queso cheddar.</p>
+
+          <div class="price-row">
+            <div class="price-pill"><i class="fa-solid fa-tag"></i> 55 Bs</div>
+          </div>
+
+          <div class="card-buttons">
+            <button
+              data-action="details"
+              class="btn-details"
+              data-name="Pizza BBQ"
+              data-desc="Salsa BBQ cremosa, pollo jugoso, cebolla caramelizada y queso cheddar derretido."
+              data-price="55 Bs"
+data-img1="https://images.unsplash.com/photo-1604382355076-af4b0eb60143?q=80&w=1200&auto=format&fit=crop"
+              data-img2="https://images.unsplash.com/photo-1594007654729-407eedc4be65?q=80&w=1200&auto=format&fit=crop"
+              data-img3="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1200&auto=format&fit=crop"
+
+              data-whatsapp="https://wa.me/59170000000?text=Hola%20PizzaX!%20Quiero%20la%20Pizza%20BBQ%20por%2055%20Bs"
+            >Detalles</button>
+
+            <a class="whatsapp-btn" href="https://wa.me/59170000000?text=Hola%20PizzaX!%20Quiero%20la%20Pizza%20BBQ%20por%2055%20Bs" target="_blank" rel="noreferrer">
+              <i class="fab fa-whatsapp"></i>
+              <span>WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card hidden">
+        <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?q=80&w=1200&auto=format&fit=crop" alt="Pizza Suprema">
+        <div class="card-content">
+          <h3>Pizza Suprema</h3>
+          <p>Ingredientes premium irresistibles.</p>
+
+          <div class="price-row">
+            <div class="price-pill"><i class="fa-solid fa-tag"></i> 65 Bs</div>
+          </div>
+
+          <div class="card-buttons">
+            <button
+              data-action="details"
+              class="btn-details"
+              data-name="Pizza Suprema"
+              data-desc="Carne, jamón, pepperoni, vegetales frescos y queso extra para una experiencia completa."
+              data-price="65 Bs"
+              data-img1="https://images.unsplash.com/photo-1594007654729-407eedc4be65?q=80&w=1200&auto=format&fit=crop"
+              data-img2="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1200&auto=format&fit=crop"
+              data-img3="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=1200&auto=format&fit=crop"
+              data-whatsapp="https://wa.me/59170000000?text=Hola%20PizzaX!%20Quiero%20la%20Pizza%20Suprema%20por%2065%20Bs"
+            >Detalles</button>
+
+            <a class="whatsapp-btn" href="https://wa.me/59170000000?text=Hola%20PizzaX!%20Quiero%20la%20Pizza%20Suprema%20por%2065%20Bs" target="_blank" rel="noreferrer">
+              <i class="fab fa-whatsapp"></i>
+              <span>WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card hidden">
+        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1200&auto=format&fit=crop" alt="Pizza Margarita">
+        <div class="card-content">
+          <h3>Pizza Margarita</h3>
+          <p>Tomate, mozzarella fresca y albahaca.</p>
+          <div class="price-row">
+            <div class="price-pill"><i class="fa-solid fa-tag"></i> 40 Bs</div>
+          </div>
+          <div class="card-buttons">
+            <button
+              data-action="details"
+              class="btn-details"
+              data-name="Pizza Margarita"
+              data-desc="Salsa de tomate natural, mozzarella fresca y albahaca para un sabor clásico y equilibrado."
+              data-price="40 Bs"
+              data-img1="https://images.unsplash.com/photo-1601924638867-3ec3d4b4b0c6?q=80&w=1200&auto=format&fit=crop"
+              data-img2="https://images.unsplash.com/photo-1548365328-9f547fb0953b?q=80&w=1200&auto=format&fit=crop"
+              data-img3="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?q=80&w=1200&auto=format&fit=crop"
+              data-whatsapp="https://wa.me/59170000000?text=Hola%20PizzaX!%20Quiero%20la%20Pizza%20Margarita%20por%2040%20Bs"
+            >Detalles</button>
+            <a class="whatsapp-btn" href="https://wa.me/59170000000?text=Hola%20PizzaX!%20Quiero%20la%20Pizza%20Margarita%20por%2040%20Bs" target="_blank" rel="noreferrer">
+              <i class="fab fa-whatsapp"></i>
+              <span>WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card hidden">
+        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1200&auto=format&fit=crop" alt="Pizza Hawaiana">
+        <div class="card-content">
+          <h3>Pizza Hawaiana</h3>
+          <p>Jamón, piña y queso derretido.</p>
+          <div class="price-row">
+            <div class="price-pill"><i class="fa-solid fa-tag"></i> 50 Bs</div>
+          </div>
+          <div class="card-buttons">
+            <button
+              data-action="details"
+              class="btn-details"
+              data-name="Pizza Hawaiana"
+              data-desc="Jamón, piña jugosa y queso cremoso con una base de salsa suave para un balance perfecto."
+              data-price="50 Bs"
+              data-img1="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?q=80&w=1200&auto=format&fit=crop"
+              data-img2="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?q=80&w=1200&auto=format&fit=crop"
+              data-img3="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1200&auto=format&fit=crop"
+              data-whatsapp="https://wa.me/59170000000?text=Hola%20PizzaX!%20Quiero%20la%20Pizza%20Hawaiana%20por%2050%20Bs"
+            >Detalles</button>
+            <a class="whatsapp-btn" href="https://wa.me/59170000000?text=Hola%20PizzaX!%20Quiero%20la%20Pizza%20Hawaiana%20por%2050%20Bs" target="_blank" rel="noreferrer">
+              <i class="fab fa-whatsapp"></i>
+              <span>WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card hidden">
+        <img src="https://images.unsplash.com/photo-1620374645498-af6bd681a0bd?q=80&w=1200&auto=format&fit=crop" alt="Pizza Pepperoni">
+        <div class="card-content">
+          <h3>Pizza Pepperoni</h3>
+          <p>Pepperoni crujiente y queso extra.</p>
+          <div class="price-row">
+            <div class="price-pill"><i class="fa-solid fa-tag"></i> 60 Bs</div>
+          </div>
+          <div class="card-buttons">
+            <button
+              data-action="details"
+              class="btn-details"
+              data-name="Pizza Pepperoni"
+              data-desc="Pepperoni con bordes crocantes, salsa de tomate y queso que se estira en cada mordida."
+              data-price="60 Bs"
+              data-img1="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1200&auto=format&fit=crop"
+              data-img2="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1200&auto=format&fit=crop"
+              data-img3="https://images.unsplash.com/photo-1594007654729-407eedc4be65?q=80&w=1200&auto=format&fit=crop"
+              data-whatsapp="https://wa.me/59170000000?text=Hola%20PizzaX!%20Quiero%20la%20Pizza%20Pepperoni%20por%2060%20Bs"
+            >Detalles</button>
+            <a class="whatsapp-btn" href="https://wa.me/59170000000?text=Hola%20PizzaX!%20Quiero%20la%20Pizza%20Pepperoni%20por%2060%20Bs" target="_blank" rel="noreferrer">
+              <i class="fab fa-whatsapp"></i>
+              <span>WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card hidden">
+        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=1200&auto=format&fit=crop" alt="Pizza Vegetariana">
+        <div class="card-content">
+          <h3>Pizza Vegetariana</h3>
+          <p>Pimientos, champiñones y vegetales frescos.</p>
+          <div class="price-row">
+            <div class="price-pill"><i class="fa-solid fa-tag"></i> 55 Bs</div>
+          </div>
+          <div class="card-buttons">
+            <button
+              data-action="details"
+              class="btn-details"
+              data-name="Pizza Vegetariana"
+              data-desc="Mezcla de vegetales frescos, champiñones y queso mozzarella con un sabor ligero y delicioso."
+              data-price="55 Bs"
+              data-img1="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=1200&auto=format&fit=crop"
+              data-img2="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1200&auto=format&fit=crop"
+              data-img3="https://images.unsplash.com/photo-1511689660979-10d2b1aada49?q=80&w=1200&auto=format&fit=crop"
+              data-whatsapp="https://wa.me/59170000000?text=Hola%20PizzaX!%20Quiero%20la%20Pizza%20Vegetariana%20por%2055%20Bs"
+            >Detalles</button>
+            <a class="whatsapp-btn" href="https://wa.me/59170000000?text=Hola%20PizzaX!%20Quiero%20la%20Pizza%20Vegetariana%20por%2055%20Bs" target="_blank" rel="noreferrer">
+              <i class="fab fa-whatsapp"></i>
+              <span>WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card hidden">
+        <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?q=80&w=1200&auto=format&fit=crop" alt="Pizza Cuatro Quesos">
+        <div class="card-content">
+          <h3>Pizza Cuatro Quesos</h3>
+          <p>Mix de quesos cremosos y sabor intenso.</p>
+          <div class="price-row">
+            <div class="price-pill"><i class="fa-solid fa-tag"></i> 70 Bs</div>
+          </div>
+          <div class="card-buttons">
+            <button
+              data-action="details"
+              class="btn-details"
+              data-name="Pizza Cuatro Quesos"
+              data-desc="Una combinación de quesos cremosos que se funden perfecto para amantes del queso."
+              data-price="70 Bs"
+              data-img1="https://images.unsplash.com/photo-1511689660979-10d2b1aada49?q=80&w=1200&auto=format&fit=crop"
+              data-img2="https://images.unsplash.com/photo-1511689660979-10d2b1aada49?q=80&w=1200&auto=format&fit=crop"
+              data-img3="https://images.unsplash.com/photo-1511689660979-10d2b1aada49?q=80&w=1200&auto=format&fit=crop"
+              data-whatsapp="https://wa.me/59170000000?text=Hola%20PizzaX!%20Quiero%20la%20Pizza%20Cuatro%20Quesos%20por%2070%20Bs"
+            >Detalles</button>
+            <a class="whatsapp-btn" href="https://wa.me/59170000000?text=Hola%20PizzaX!%20Quiero%20la%20Pizza%20Cuatro%20Quesos%20por%2070%20Bs" target="_blank" rel="noreferrer">
+              <i class="fab fa-whatsapp"></i>
+              <span>WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card hidden">
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1200&auto=format&fit=crop" alt="Pizza Pollo BBQ">
+        <div class="card-content">
+          <h3>Pizza Pollo BBQ</h3>
+          <p>Pollo jugoso con salsa BBQ y queso cheddar.</p>
+          <div class="price-row">
+            <div class="price-pill"><i class="fa-solid fa-tag"></i> 58 Bs</div>
+          </div>
+          <div class="card-buttons">
+            <button
+              data-action="details"
+              class="btn-details"
+              data-name="Pizza Pollo BBQ"
+              data-desc="Salsa BBQ, pollo doradito, cebolla crujiente y queso cheddar para un sabor irresistible."
+              data-price="58 Bs"
+              data-img1="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1200&auto=format&fit=crop"
+              data-img2="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1200&auto=format&fit=crop"
+              data-img3="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1200&auto=format&fit=crop"
+              data-whatsapp="https://wa.me/59170000000?text=Hola%20PizzaX!%20Quiero%20la%20Pizza%20Pollo%20BBQ%20por%2058%20Bs"
+            >Detalles</button>
+            <a class="whatsapp-btn" href="https://wa.me/59170000000?text=Hola%20PizzaX!%20Quiero%20la%20Pizza%20Pollo%20BBQ%20por%2058%20Bs" target="_blank" rel="noreferrer">
+              <i class="fab fa-whatsapp"></i>
+              <span>WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card hidden">
+        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1200&auto=format&fit=crop" alt="Pizza Especial de la Casa">
+        <div class="card-content">
+          <h3>Pizza Especial</h3>
+          <p>La combinación de la casa: sabor premium.</p>
+          <div class="price-row">
+            <div class="price-pill"><i class="fa-solid fa-tag"></i> 75 Bs</div>
+          </div>
+          <div class="card-buttons">
+            <button
+              data-action="details"
+              class="btn-details"
+              data-name="Pizza Especial"
+              data-desc="Creación de la casa con ingredientes seleccionados y queso extra para una experiencia única."
+              data-price="75 Bs"
+              data-img1="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1200&auto=format&fit=crop"
+              data-img2="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1200&auto=format&fit=crop"
+              data-img3="https://images.unsplash.com/photo-1594007654729-407eedc4be65?q=80&w=1200&auto=format&fit=crop"
+              data-whatsapp="https://wa.me/59170000000?text=Hola%20PizzaX!%20Quiero%20la%20Pizza%20Especial%20por%2075%20Bs"
+            >Detalles</button>
+            <a class="whatsapp-btn" href="https://wa.me/59170000000?text=Hola%20PizzaX!%20Quiero%20la%20Pizza%20Especial%20por%2075%20Bs" target="_blank" rel="noreferrer">
+              <i class="fab fa-whatsapp"></i>
+              <span>WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="nosotros">
+    <div class="about hidden">
+      <img src="https://images.unsplash.com/photo-1528137871618-79d2761e3fd5?q=80&w=1200&auto=format&fit=crop" alt="Nuestra pizzería">
+      <div class="about-text">
+        <h2>Sobre Nuestra Pizzería</h2>
+        <p>
+          Somos una pizzería premium especializada en pizzas artesanales, ingredientes frescos y una experiencia gastronómica moderna.
+        </p>
+        <p>
+          Nuestro objetivo es ofrecer sabores únicos con atención rápida y ambiente futurista.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secciones extra debajo de la página -->
+  <section id="calidad">
+    <div class="title hidden">
+      <h2>Calidad que se nota</h2>
+      <p>Selección de ingredientes + proceso artesanal</p>
+    </div>
+
+    <div class="features">
+      <div class="feature">
+        <i class="fa-solid fa-leaf fa-2x"></i>
+        <h3>Ingredientes frescos</h3>
+        <p>Elegimos insumos de primera para una masa y sabor impecables.</p>
+      </div>
+      <div class="feature">
+        <i class="fa-solid fa-fire-flame-curved fa-2x"></i>
+        <h3>Horno al punto</h3>
+        <p>Temperatura controlada para lograr bordes crocantes y centro jugoso.</p>
+      </div>
+      <div class="feature">
+        <i class="fa-solid fa-clock fa-2x"></i>
+        <h3>Entrega rápida</h3>
+        <p>Preparación ágil y empaques pensados para llegar caliente.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="opiniones">
+    <div class="title hidden">
+      <h2>Opiniones</h2>
+      <p>Lo que dicen nuestros clientes</p>
+    </div>
+
+    <div class="testimonials">
+      <div class="testimonial">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p>"La Pizza BBQ es una locura. El sabor es intenso y la entrega llegó rapidísimo."</p>
+        <h4>- Cliente verificado</h4>
+      </div>
+      <div class="testimonial">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p>"La masa es perfecta. El queso se siente fresco y el pepperoni queda delicioso."</p>
+        <h4>- Cliente verificado</h4>
+      </div>
+      <div class="testimonial">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p>"Buenísima experiencia. Volvería a pedir la Suprema sin pensarlo."</p>
+        <h4>- Cliente verificado</h4>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="footer-grid">
+
+      <div>
+        <h3>PizzaX</h3>
+        <p>Pizzería premium con las mejores promociones y sabores artesanales.</p>
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h3>Contacto</h3>
+        <p><i class="fa-solid fa-location-dot"></i> Cochabamba, Bolivia</p>
+        <p><i class="fa-solid fa-phone"></i> +591 70000000</p>
+        <p><i class="fa-solid fa-envelope"></i> pizzax@gmail.com</p>
+      </div>
+
+      <div class="map">
+        <h3>Ubicación</h3>
+        <div class="map-box">
+          <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=cochabamba&t=&z=13&ie=UTF8&iwloc=&output=embed" title="Mapa de Cochabamba"></iframe>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="float-whatsapp" aria-label="WhatsApp flotante"><i class="fab fa-whatsapp"></i></a>
+
+  <!-- Modal pizza -->
+<div class="modal-overlay" id="pizzaModalOverlay" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="pizzaModalTitle">
+      <div class="modal-header">
+        <div>
+          <h3 id="pizzaModalTitle">Pizza</h3>
+          <div class="modal-price" id="pizzaModalPrice"></div>
+          <div class="modal-sub" id="pizzaModalDesc" style="margin-top:8px"></div>
+        </div>
+        <button class="modal-close" id="pizzaModalClose" aria-label="Cerrar modal"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+
+      <div class="modal-body">
+        <div>
+          <div class="modal-gallery" id="pizzaModalGallery"></div>
+        </div>
+        <div class="modal-info">
+          <p class="modal-sub" style="margin-bottom:12px"><i class="fa-solid fa-circle-info"></i> Detalles de la pizza</p>
+          <p class="modal-sub" id="pizzaModalMore">Pide ahora y disfruta en minutos.</p>
+          <div class="modal-cta">
+            <a id="pizzaModalWhatsApp" class="whatsapp-btn" href="#" target="_blank" rel="noreferrer"><i class="fab fa-whatsapp"></i>WhatsApp</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/main.js"></script>
+  <script src="js/pizzas.js"></script>
+</body>
+</html>
+
+
+
